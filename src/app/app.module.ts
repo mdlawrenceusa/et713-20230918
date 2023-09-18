@@ -6,19 +6,29 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { HeaderComponent } from './header/header.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+  
+      { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
+      { path: 'home', component: ProductListComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    HeaderComponent,
+    JumbotronComponent,
+    CategoriesComponent,
+    FooterComponent
   ],
   bootstrap: [
     AppComponent
