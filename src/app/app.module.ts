@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     JumbotronComponent,
     CategoriesComponent,
-    FooterComponent
+    FooterComponent,
+    VideosComponent
   ],
   bootstrap: [
     AppComponent
