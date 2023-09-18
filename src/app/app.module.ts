@@ -21,6 +21,7 @@ import { VideosComponent } from './videos/videos.component';
       { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
       { path: 'product-list', component: ProductListComponent },
       { path: 'home', component: CategoriesComponent }, // Categories page
+      { path: 'videos', component: VideosComponent }, // Add this route for the VideosComponent
       
     ])
   ],
