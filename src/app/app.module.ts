@@ -17,7 +17,7 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
   
-      { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
+      { path: '', redirectTo: '/categories', pathMatch: 'full' }, // Redirect to home by default
       { path: 'home', component: ProductListComponent },
       { path: 'categories', component: CategoriesComponent }, // Categories page
       
