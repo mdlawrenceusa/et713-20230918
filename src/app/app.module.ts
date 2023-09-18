@@ -19,6 +19,8 @@ import { FooterComponent } from './footer/footer.component';
   
       { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home by default
       { path: 'home', component: ProductListComponent },
+      { path: 'categories', component: CategoriesComponent }, // Categories page
+      
     ])
   ],
   declarations: [
